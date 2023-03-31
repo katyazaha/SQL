@@ -335,15 +335,23 @@ where salary.monthly_salary < 2000;
  
 -- 3. Вывести все зарплатные позиции, но работник по ним не назначен. (ЗП есть, но не понятно кто её получает.)
  
- 
- 
-select * from 
-employee_salary join salary on employee_salary.salary_id = salary.id
-	where employee_name is null;
+select employee_salary.employee_id, monthly_salary 
+from salary join employee_salary on employee_salary.salary_id = salary.id
+where employee_salary.employee_id not in (select id from employees);
  
  
  
  --4. Вывести все зарплатные позиции  меньше 2000 но работник по ним не назначен. (ЗП есть, но не понятно кто её получает.)
+
+
+select employee_salary.employee_id, monthly_salary 
+from salary join employee_salary on employee_salary.salary_id = salary.id
+where employee_salary.employee_id not in (select id from employees)
+and salary.monthly_salary < 2000;
+
+
+
+
  --5. Найти всех работников кому не начислена ЗП.
  -- 6. Вывести всех работников с названиями их должности.
  --7. Вывести имена и должность только Java разработчиков.
