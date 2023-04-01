@@ -1,8 +1,8 @@
 
-/* 1. Создать таблицу employees
+/* 1. Create table "employees"
 - id. serial,  primary key,
 - employee_name. Varchar(50), not null
-2. Наполнить таблицу employee 70 строками.
+2. Fill the table "employee" with 70 lines.
 */
 
 
