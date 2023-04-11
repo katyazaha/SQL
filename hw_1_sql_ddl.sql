@@ -90,10 +90,10 @@ select * from  employees;
 	
 	
 	
-3. Создать таблицу salary
+/*3. Создать таблицу salary
 - id. Serial  primary key,
 - monthly_salary. Int, not null
-4. Наполнить таблицу salary 16 строками
+4. Наполнить таблицу salary 16 строками*/
 
 
 create table salary(
@@ -127,12 +127,12 @@ select * from salary;
 
 	
 
-5. Создать таблицу employee_salary
+/*5. Создать таблицу employee_salary
 - id. Serial  primary key,
 - employee_id. Int, not null, unique
 - salary_id. Int, not null
 6. Наполнить таблицу employee_salary 40 строками:
-- в 10 строк из 40 вставить несуществующие employee_id
+- в 10 строк из 40 вставить несуществующие employee_id*/
 
 
 
