@@ -296,7 +296,7 @@ select * from roles_employee;
 
 
 
-12. Удалить все таблицы
+/*12. Удалить все таблицы*/
 
 drop table employee_salary;
 drop table roles_employee;
